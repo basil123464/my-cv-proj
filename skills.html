@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills | Christopher Basil Wanyonyi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="personal.html">Personal Details</a>
+    <a href="profile.html">Profile</a>
+    <a href="experience.html">Experience</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="section">
+      <h1><center>Skills</center></h1>
+      <p class="skills-intro"> <center><b>Below are some of my key skills and areas of expertise:</b></center></p>
+
+      <div class="skills-list">
+        <span class="skill-badge">Data Analyst</span>
+        <span class="skill-badge">Graphic Design</span>
+        <span class="skill-badge">Web Development</span>
+        <span class="skill-badge">Cybersecurity</span>
+        <span class="skill-badge">Python & JavaScript</span>
+        <span class="skill-badge">Database Management</span>
+        <span class="skill-badge">Networking</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Christopher Basil Wanyonyi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

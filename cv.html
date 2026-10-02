@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Basil Wanyonyi - CV</title>
+  <style>
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    .cv-container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    .cv-header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #1f2937;
+    }
+    .cv-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #0284c7;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .cv-header h1 { font-size: 2rem; margin-bottom: 5px; }
+    .cv-section { margin-bottom: 30px; }
+    .cv-section h2 {
+      background: #1f2937;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    .cv-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .cv-table th {
+      background: #1f2937;
+      color: #38bdf8;
+      padding: 10px;
+      text-align: left;
+    }
+    .cv-table td {
+      padding: 10px;
+      border: 1px solid #e5e7eb;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-badge {
+      background: #1f2937;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+    }
+    .contact-info p { margin-bottom: 8px; }
+    .btn {
+      display: inline-block;
+      background: #1f2937;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .download-btn {
+      text-align: center;
+      margin: 20px;
+    }
+    .download-btn button {
+      padding: 12px 30px;
+      background: #1f2937;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 0 5px;
+    }
+    .download-btn button:hover {
+      background: #0284c7;
+    }
+    @media print {
+      body { background: white; }
+      .cv-container { box-shadow: none; margin: 0; }
+      .download-btn { display: none; }
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-docx-js@0.3.1/dist/html-docx.js"></script>
+</head>
+<body>
+
+  <div class="cv-container" id="cv-content">
+    <div class="cv-header">
+      <img src="image.png" alt="Christopher Basil Wanyonyi">
+      <h1>Christopher Basil Wanyonyi</h1>
+      <p><strong>ICT Professional</strong></p>
+      <p>Nairobi, Kenya | +254 796 436 298 | wanyonyibasil@gmail.com</p>
+    </div>
+    <div class="cv-section">
+      <h2>1. Personal Background</h2>
+      <p><strong>Name:</strong> Christopher Basil Wanyonyi</p>
+      <p><strong>Phone:</strong> +254 796 436 298</p>
+      <p><strong>Email:</strong> wanyonyibasil@gmail.com</p>
+      <p><strong>Nationality:</strong> Kenyan</p>
+      <p><strong>County:</strong> Nairobi</p>
+    </div>
+    <div class="cv-section">
+      <h2>2. Profile</h2>
+      <p>
+        Dedicated ICT professional based in Nairobi, Kenya. Passionate about software development, 
+        network infrastructure, and implementing modern digital solutions. Currently pursuing a 
+        BSc in Information Technology at Kisii University. Strong foundation in programming, 
+        data analysis, and cybersecurity.
+      </p>
+    </div>
+
+    <!-- EDUCATION & EXPERIENCE -->
+    <div class="cv-section">
+      <h2>3. Education & Experience</h2>
+      <table class="cv-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Institutions attended</th>
+            <th>Awards / Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024 – Present</td>
+            <td>Kisii University</td>
+            <td>BSc in Information Technology</td>
+          </tr>
+          <tr>
+            <td>2024 – 2025</td>
+            <td>Graffingsavvy College</td>
+            <td>Diploma in ICT</td>
+          </tr>
+          <tr>
+            <td>2021 – 2024</td>
+            <td>Khasoko Boys</td>
+            <td>Certificate of Completion</td>
+          </tr>
+          <tr>
+            <td>2012 – 2021</td>
+            <td>Mwibale Academy</td>
+            <td>Primary School Certificate</td>
+          </tr>
+          <tr>
+            <td>2023 – Present</td>
+            <td>Nickie Graphics</td>
+            <td>Graphic Designer</td>
+          </tr>
+          <tr>
+            <td>2023 – Present</td>
+            <td>Basil Webs</td>
+            <td>Web Developer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cv-section">
+      <h2>4. Skills</h2>
+      <div class="skills-list">
+        <span class="skill-badge">Data Analyst</span>
+        <span class="skill-badge">Graphic Design</span>
+        <span class="skill-badge">Web Development</span>
+        <span class="skill-badge">Cybersecurity</span>
+        <span class="skill-badge">Python & JavaScript</span>
+        <span class="skill-badge">Database Management</span>
+        <span class="skill-badge">Networking</span>
+        <span class="skill-badge">UI/UX Design</span>
+        <span class="skill-badge">Git & Version Control</span>
+      </div>
+    </div>
+    <div class="cv-section">
+      <h2>5. Languages</h2>
+      <div class="skills-list">
+        <span class="skill-badge">English (Fluent)</span>
+        <span class="skill-badge">Swahili (Native / Fluent)</span>
+      </div>
+    </div>
+    <div class="cv-section">
+      <h2>6. Hobbies & Interests</h2>
+      <div class="skills-list">
+        <span class="skill-badge">Software Engineering & Coding</span>
+        <span class="skill-badge">Open Source Contributing</span>
+        <span class="skill-badge">Tech Blogging & Reading</span>
+        <span class="skill-badge">Problem Solving & Algorithms</span>
+      </div>
+    </div>
+    <div class="cv-section">
+      <h2>7. Contact</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> wanyonyibasil@gmail.com</p>
+        <p><strong>Phone:</strong> +254 796 436 298</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+        <p><strong>GitHub:</strong> github.com/basil123464</p>
+         <p><a href="https://github.com/basil123464/" target="_blank">GitHub</a></p>
+      <p> <a href="https://www.linkedin.com/in/christopher-basil-874ab7386/" target="_blank">LinkedIn</a></p>
+      <p><a href="https://christopher-basil-portfolio.vercel.app/" target="_blank">Portfolio</a></p>
+
+        <p><a href="mailto:wanyonyibasil@gmail.com" class="btn">Email me</a></p>
+      </div>
+    </div>
+
+  </div>
+  <div class="download-btn">
+    <button id="download-pdf">Download as PDF</button>
+    <button id="download-docx">Download as DOCX</button>
+  </div>
+
+   <script>
+    document.getElementById('download-pdf').addEventListener('click', function () {
+      const element = document.getElementById('cv-content');
+      const options = {
+        margin:       10,
+        filename:     'Christopher_Basil_Wanyonyi_CV.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().from(element).set(options).save();
+    });
+
+
+    document.getElementById('download-docx').addEventListener('click', function () {
+      const content = document.getElementById('cv-content').innerHTML;
+      const converted = htmlDocx.asBlob(`
+        <!DOCTYPE html>
+        <html>
+          <head><meta charset="utf-8"></head>
+          <body>${content}</body>
+        </html>
+      `);
+
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(converted);
+      link.download = 'Christopher_Basil_Wanyonyi_CV.docx';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+
+</body>
+</html>

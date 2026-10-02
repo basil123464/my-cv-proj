@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Christopher Basil Wanyonyi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="personal.html">Personal Details</a>
+    <a href="profile.html">Profile</a>
+    <a href="experience.html" class="active">Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="main">
+    <section class="section">
+      <h1>Personal Experience / CV</h1>
+
+      <!-- 3-column table -->
+      <table class="cv-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Institutions attended</th>
+            <th>Awards given</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025 – Present</td>
+            <td>Kisii University</td>
+            <td>Pursuing BSc in Information Technology</td>
+          </tr>
+          <tr>
+            <td>2024 – 2025</td>
+            <td>Graffingsavvy College</td>
+            <td>Diploma in Graphic Design</td>
+          </tr>
+          <tr>
+            <td>2021 – 2024</td>
+            <td>Khasoko Boys</td>
+            <td>Certificate of Completion</td>
+          </tr>
+          <tr>
+            <td>2012 – 2021</td>
+            <td>Mwibale Academy</td>
+            <td>Primary School Certificate</td>
+          </tr>
+          <tr>
+            <td>2023 – Present</td>
+            <td>Nickie Graphics</td>
+            <td>Graphic Design Projects</td>
+          </tr>
+          <tr>
+            <td>2023 – Present</td>
+            <td>Basil Webs</td>
+            <td>Web Development Projects</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Horizontal rule after the table -->
+      <hr class="full-hr">
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Christopher Basil Wanyonyi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

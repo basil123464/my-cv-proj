@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Basil Wanyonyi | Personal CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Circular photo on top left -->
+  <div class="profile-photo">
+    <img src="image.png" alt="Christopher Basil Wanyonyi">
+  </div>
+
+  <!-- Dark header -->
+  <header class="header">
+    <h1>Christopher Basil Wanyonyi</h1>
+    <p class="subtitle">ICT Professional</p>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="personal.html">Personal Details</a>
+      <a href="profile.html">Profile</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="main">
+    <div class="welcome-card">
+      <h2>Welcome to My Personal CV</h2>
+      <p class="name">Christopher Basil Wanyonyi</p>
+      <p class="intro">
+        Hello! My name is Christopher Basil Wanyonyi. I am an Information Technology student 
+        interested in web development, networking, data analysis and cybersecurity.
+      </p>
+      <a href="profile.html" class="btn">View My Profile</a>
+    </div>
+
+    <!-- Full-width horizontal rule -->
+    <hr class="full-hr">
+
+    <!-- Details below the rule -->
+    <div class="home-details">
+      <p><strong>Name:</strong> Christopher Basil Wanyonyi</p>
+      <p><strong>Course:</strong> Bachelor of Science in Information Technology (BSc IT) – Kisii University</p>
+      <p><strong>Background:</strong> Dedicated ICT professional based in Nairobi, Kenya. 
+         Strong interest in Networking, Web Development, Data Analysis and Cybersecurity. 
+         Completed a Diploma at Graffingsavvy College and has practical experience as a Graphic Designer and Web Developer.</p>
+      <p><strong>Future Goals:</strong> After completing my degree, I hope to work as a Network Engineer or Full-Stack Web Developer 
+         and eventually start my own tech company providing digital solutions in Kenya.</p>
+    </div>
+    <!-- Add this inside your home page (inside the welcome-card or after home-details) -->
+<div style="text-align: center; margin: 30px 0;">
+  <button onclick="downloadCV()" class="btn">
+    Download CV as PDF
+  </button>
+</div>
+
+<script>
+  function downloadCV() {
+    // Opens the full CV page in a new tab
+    window.open('cv.html', '_blank');
+  }
+</script>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Christopher Basil Wanyonyi. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
